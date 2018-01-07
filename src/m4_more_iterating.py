@@ -214,8 +214,10 @@ def sum_sequence(sequence):
     # ------------------------------------------------------------------
 
     total = 0
-    for k in sequence:
-            total = total + k
+    #for k in sequence:
+    #   total = total + k
+    for k in range(len(sequence)):
+        total = total + sequence[k]
 
     return total
 
@@ -405,8 +407,10 @@ def count_items_bigger_than(numbers, threshold):
     # ------------------------------------------------------------------
 
     total = 0
-    for k in numbers:
-        if k > threshold:
+    #for k in numbers:
+    #    if k > threshold:
+    for k in range(len(numbers)):
+        if numbers[k] > threshold:
             total = total + 1
     return total
 
