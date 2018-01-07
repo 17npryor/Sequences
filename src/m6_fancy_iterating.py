@@ -47,12 +47,17 @@ def main():
     #     4. When satisfied with your work, move onto the next test.
     # ------------------------------------------------------------------
 
-#   run_test_print_all_items_forwards(sequence1, sequence2, sequence3, sequence4)
-#   run_test_print_all_items_backwards(sequence1, sequence2, sequence3, sequence4)
-#   run_test_print_items_at_odd_indices(sequence1, sequence2, sequence3, sequence4)
-#   run_test_print_items_in_second_half(sequence1, sequence2, sequence3, sequence4)
-#   run_test_print_items_that_are_bigger_than_5()  # Uses different sequences
-#   run_test_print_items_that_are_strings(sequence1, sequence2, sequence3, sequence4)
+    run_test_print_all_items_forwards(sequence1, sequence2, sequence3,
+                                      sequence4)
+    run_test_print_all_items_backwards(sequence1, sequence2, sequence3,
+                                       sequence4)
+    run_test_print_items_at_odd_indices(sequence1, sequence2, sequence3,
+                                        sequence4)
+    run_test_print_items_in_second_half(sequence1, sequence2, sequence3,
+                                        sequence4)
+    run_test_print_items_that_are_bigger_than_5()  # Uses different sequences
+    run_test_print_items_that_are_strings(sequence1, sequence2, sequence3,
+                                          sequence4)
     run_test_print_items_that_are_odd_integers(sequence1, sequence2, sequence3, sequence4)
 
 
@@ -445,12 +450,8 @@ def print_items_in_second_half(sequence):
     # IMPORTANT: RANGE expressions need INTEGERS.
     #   Use   //   for integer division.
     # ------------------------------------------------------------------
-    #k1 = len(sequence) // 2
-    #k2 = len(sequence)
+
     for k in range((len(sequence)) // 2, len(sequence)):
-        if len(sequence) % 2 == 0:
-            print(sequence[k])
-        if len(sequence) % 2 == 1:
             print(sequence[k])
 
 # ----------------------------------------------------------------------
